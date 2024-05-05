@@ -1,6 +1,6 @@
-Assignment5:	main.o Escape.o Hero.o List.o Participant.o random.o Snorc.o MoveBehaviour.o Ninja.o 
+EscapeSimulator:	main.o Escape.o Hero.o List.o Participant.o random.o Snorc.o MoveBehaviour.o Ninja.o 
 				RescuedBehaviour.o VillanBehaviour.o EscapeeBehaviour.o RescuerBehaviour.o 
-	g++ -g -o Assignment5 main.o Escape.o Hero.o List.o Participant.o random.o Snorc.o MoveBehaviour.o Ninja.o 
+	g++ -g -o EscapeSimulator main.o Escape.o Hero.o List.o Participant.o random.o Snorc.o MoveBehaviour.o Ninja.o 
 				RescuedBehaviour.o VillanBehaviour.o EscapeeBehaviour.o RescuerBehaviour.o 
 
 main.o:			main.cc Escape.h
@@ -43,4 +43,4 @@ VillanBehaviour.o:	VillanBehaviour.cc VillanBehaviour.h MoveBehaviour.h
 	g++ -c VillanBehaviour.h
 
 clean:
-	rm -f *.o Assignment5
+	rm -f *.o EscapeSimulator
